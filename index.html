@@ -25,5 +25,22 @@
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="text-center fs-2">to do list</header>
+      <form action="to-do-input">
+        <input type="text" placeholder="enter task here" />
+        <input type="button" value="enter" id="enter-button" />
+      </form>
+      <div class="to-do-list">
+        <div class="card">
+          <div class="card-body">
+            ◦ complete coding homework
+            <button><i class="fa-solid fa-check"></i></button>
+            <button><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
