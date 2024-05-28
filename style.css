@@ -51,9 +51,17 @@ button {
     display:none;
 }
 
-@media (max-width = 713px) {
+@media (max-width: 713px) {
+    .container {
+        width: 80%
+    }
+}
+
+@media (max-width: 450 ) {
     .container {
         width: 100%
     }
 }
+
+
 

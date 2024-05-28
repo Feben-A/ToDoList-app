@@ -3,6 +3,7 @@ function addToList (event) {
 event.preventDefault();
 
 
+
 let toDoList = document.querySelector(".to-do-list");
 let cardElement = document.createElement('div');
 cardElement.classList.add('card')
@@ -45,8 +46,11 @@ newTask.classList.add('cross-off')
 
 function removeTask(event) {
     cardElement.classList.add('delete')
+} 
+
 }
-}
+
+
 
 
 let form = document.querySelector(".form");
