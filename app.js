@@ -49,8 +49,6 @@ function removeTask(event) {
 }
 
 
-
-
 let form = document.querySelector(".form");
 form.addEventListener( "submit", addToList);
 
