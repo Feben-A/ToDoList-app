@@ -27,17 +27,30 @@
   </head>
   <body>
     <div class="container">
-      <header class="text-center fs-2">to do list</header>
-      <form action="to-do-input">
-        <input type="text" placeholder="enter task here" />
-        <input type="button" value="enter" id="enter-button" />
+      <header class="text-center">to do list</header>
+      <form>
+        <input
+          type="text"
+          placeholder="enter task here"
+          class="input-text-element"
+        />
+        <input
+          type="button"
+          value="+"
+          class="submit-element fs-4"
+          id="submit-button"
+        />
       </form>
+      <hr />
+
       <div class="to-do-list">
         <div class="card">
-          <div class="card-body">
-            ◦ complete coding homework
-            <button><i class="fa-solid fa-check"></i></button>
-            <button><i class="fa-solid fa-trash"></i></button>
+          <div class="p-2 d-flex justify-content-between">
+            <div>◦ complete coding homework</div>
+            <div class="task-icons">
+              <button><i class="fa-solid fa-check"></i></button>
+              <button><i class="fa-solid fa-trash"></i></button>
+            </div>
           </div>
         </div>
       </div>
