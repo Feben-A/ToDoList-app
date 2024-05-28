@@ -42,3 +42,11 @@ form {
 button {
     border: none;
 }
+
+.cross-off {
+    text-decoration:line-through;
+}
+
+.delete {
+    display:none;
+}

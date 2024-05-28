@@ -1,9 +1,7 @@
 
-
-
 function addToList (event) {
 event.preventDefault();
-let inputTask = document.querySelector(".input-text-element");
+
 
 let toDoList = document.querySelector(".to-do-list");
 let cardElement = document.createElement('div');
@@ -37,7 +35,17 @@ let deleteIcon = document.createElement('i');
 deleteIcon.classList.add('fa-solid', 'fa-trash');
 deleteButton.appendChild(deleteIcon)
 
+tickButton.addEventListener('click', completeTask);
+deleteButton.addEventListener('click', removeTask)
 
+
+function completeTask (event) {
+newTask.classList.add('cross-off')
+}
+
+function removeTask(event) {
+    cardElement.classList.add('delete')
+}
 }
 
 
@@ -46,3 +54,4 @@ deleteButton.appendChild(deleteIcon)
 let form = document.querySelector(".form");
 form.addEventListener( "submit", addToList);
 
+let inputTask = document.querySelector(".input-text-element");
